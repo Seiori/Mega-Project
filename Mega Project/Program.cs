@@ -4,7 +4,7 @@ namespace Mega_Project
 {
     class Program
     {
-        static void Main()
+        public static void Main()
         {
             Console.WriteLine("Welcome to my Mega Project!");
             Console.WriteLine();
@@ -28,7 +28,10 @@ namespace Mega_Project
             Console.WriteLine("Please Enter the Corresponding Number to the Option of your Choice");
             string Choice = Console.ReadLine();
 
-
+            if (Choice == "1")
+            {
+                Numbers.FindPi.NthPi();
+            }
         }
     }
 }
